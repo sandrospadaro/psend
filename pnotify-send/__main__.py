@@ -7,7 +7,7 @@ def main():
 
 
     parser = argparse.ArgumentParser(
-                        prog = 'pnotify_send',
+                        prog = 'pnotify-send',
                         description = 'Utility to send push notification',
                         epilog = 'Send push notification to Simple Push Notification API (https://play.google.com/store/apps/details?id=net.xdroid.pn)')
     parser.add_argument('-k', '--key', dest="key", required=True, nargs='+')
@@ -27,18 +27,18 @@ def main():
         response = requests.get(service_url, params={"k": key, "t": title, "c": payload, "u": url })
 
         if response.status_code != 200:
-            print("[-] Errore durante l'invio della notifica al dispositivo", key)
+            print("[-] Error sending notification with API Key", key)
             print("[-] status code:", response.status_code) 
             exit(1)
         else:
             content = json.loads(response.content)
             if not content["success"] == "1":
-                print("[-] Errore durante l'invio della notifica al dispositivo", key)
+                print("[-] Error sending notification with API Key", key)
                 print("[-] success:", content["success"])
                 print("[-] success:", content["error"])
                 exit(2)
             else:
-                print("[+] Invio della notifica avvenuto con successo al dispositivo", key)
+                print("[+] Notification sent successfully with API Key", key)
                 print("[+] success:", content["success"])
                 print("[+] error:", content["error"])
 

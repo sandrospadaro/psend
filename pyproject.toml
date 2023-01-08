@@ -4,8 +4,9 @@ version = "0.1.0"
 description = "Utility to send push notification."
 authors = ["Sandro Spadaro <sandro.spadaro@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pnotify_send"}]
+packages = [{include = "pnotify-send"}]
 license = "Apache-2.0"
+repository = "https://github.com/sandrospadaro/pnotify-send"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -18,4 +19,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-pnotify-send = "pnotify_send.__main__:main"
+pnotify-send = "pnotify-send.__main__:main"

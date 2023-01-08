@@ -7,7 +7,7 @@ def send_push_notification():
 
 
     parser = argparse.ArgumentParser(
-                        prog = 'pnotifysend',
+                        prog = 'psend',
                         description = 'Utility to send push notification',
                         epilog = 'Send push notification to Simple Push Notification API (https://play.google.com/store/apps/details?id=net.xdroid.pn)')
     parser.add_argument('-k', '--key', dest="key", required=True, nargs='+')

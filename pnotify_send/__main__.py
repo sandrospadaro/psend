@@ -1,4 +1,4 @@
-if __name__ == "__main__":
+def main():
     import requests
     import json
     import argparse
@@ -41,3 +41,6 @@ if __name__ == "__main__":
                 print("[+] Invio della notifica avvenuto con successo al dispositivo", key)
                 print("[+] success:", content["success"])
                 print("[+] error:", content["error"])
+
+if __name__ == "__main__":
+    main()

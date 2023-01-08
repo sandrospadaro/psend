@@ -45,7 +45,7 @@ Send push notification to Simple Push Notification API
 (https://play.google.com/store/apps/details?id=net.xdroid.pn)
 ```
 
-## Refernces
+## References
 
 * Git repository: https://github.com/sandrospadaro/psend
 * Pypi repository: https://pypi.org/project/psend/

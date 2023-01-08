@@ -3,9 +3,6 @@ import json
 import argparse
 
 def send_push_notification():
-    # http://xdroid.net/api/message?k=k-546329599a65&t=sample&c=from+asus+ASUS_X00TD&u=http%3A%2F%2Fgoogle.com
-
-
     parser = argparse.ArgumentParser(
                         prog = 'psend',
                         description = 'Utility to send push notification',

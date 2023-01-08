@@ -7,7 +7,7 @@ def send_push_notification():
                         prog = 'psend',
                         description = 'Utility to send push notifications',
                         epilog = 'Send push notifications to Simple Push Notification API (https://play.google.com/store/apps/details?id=net.xdroid.pn)')
-    parser.add_argument('-k', '--key', dest="key", required=True, nargs='+')
+    parser.add_argument('-k', '--keys', dest="keys", metavar="KEY", required=True, nargs='+')
     parser.add_argument('-t', '--title', dest="title", required=True)
     parser.add_argument('-c', '--content', dest="content", required=True)
     parser.add_argument('-u', '--url', dest="url", required=False)
@@ -15,7 +15,7 @@ def send_push_notification():
 
     service_url = "http://xdroid.net/api/message"
     args = parser.parse_args()
-    keys = args.key
+    keys = args.keys
     title = args.title
     payload = args.content
     url = args.url

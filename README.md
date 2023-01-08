@@ -1,4 +1,4 @@
-# pnotify-send
+# psend
 Simple python utility for send push notifications.
 
 ## Description
@@ -11,26 +11,26 @@ The notifications will recived by the "[Simple Push Notification API](https://pl
 You can install it using **pip**
 
 ```bash
-pip install pnotify-send
+pip install psend
 ```
 ## How to use
 
 After installing this, it can be used by calling the script:
 
 ```bash
-pnotify-send
+psend
 ```
 
 or using python:
 
 ```bash
-python -m pnotify-send
+python -m psend
 ```
 ## Options
 The options for this utility can shown using `-h` flag:
 
 ```
-usage: pnotify-send [-h] -k KEY [KEY ...] -t TITLE -c CONTENT [-u URL]
+usage: psend [-h] -k KEY [KEY ...] -t TITLE -c CONTENT [-u URL]
 
 Utility to send push notification
 
@@ -47,5 +47,5 @@ Send push notification to Simple Push Notification API
 
 ## Refernces
 
-* Git repository: https://github.com/sandrospadaro/pnotify-send
-* Pypi repository: https://pypi.org/project/pnotify-send/
+* Git repository: https://github.com/sandrospadaro/psend
+* Pypi repository: https://pypi.org/project/psend/

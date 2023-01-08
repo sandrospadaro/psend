@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pnotify-send"
-version = "0.1.0"
+version = "0.1.1"
 description = "Utility to send push notification."
 authors = ["Sandro Spadaro <sandro.spadaro@gmail.com>"]
 readme = "README.md"

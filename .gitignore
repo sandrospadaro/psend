@@ -1,3 +1,4 @@
 appunti.txt
 .venv/**
 dist/**
+.python-version

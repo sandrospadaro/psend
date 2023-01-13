@@ -24,17 +24,17 @@ def send_push_notification():
         response = requests.get(service_url, params={"k": key, "t": title, "c": payload, "u": url })
 
         if response.status_code != 200:
-            print("[-] Error sending notification with API Key", key)
-            print("[-] status code:", response.status_code) 
+            print("[-] Error sending notification with API Key " + key)
+            print("[-] status code: " + response.status_code) 
             exit(1)
         else:
             content = json.loads(response.content)
             if not content["success"] == "1":
-                print("[-] Error sending notification with API Key", key)
-                print("[-] success:", content["success"])
-                print("[-] success:", content["error"])
+                print("[-] Error sending notification with API Key " + key)
+                print("[-] success: " + content["success"])
+                print("[-] success: " + content["error"])
                 exit(2)
             else:
-                print("[+] Notification sent successfully with API Key", key)
-                print("[+] success:", content["success"])
-                print("[+] error:", content["error"])
+                print("[+] Notification sent successfully with API Key " + key)
+                print("[+] success: " + content["success"])
+                print("[+] error: " + content["error"])

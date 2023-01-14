@@ -24,7 +24,7 @@ def psend(keys, title, payload, url):
                 print("[+] Notification sent successfully with API Key " + key)
                 print("[+] success: " + content["success"])
                 print("[+] error: " + content["error"])
-                return 0
+    return 0
 
 def main():
     parser = argparse.ArgumentParser(

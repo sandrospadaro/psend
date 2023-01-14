@@ -44,13 +44,21 @@ Utility to send push notification
 
 options:
   -h, --help            show this help message and exit
-  -k KEY [KEY ...], --key KEY [KEY ...]
+  -k KEY [KEY ...], --keys KEY [KEY ...]
   -t TITLE, --title TITLE
   -c CONTENT, --content CONTENT
   -u URL, --url URL
 
 Send push notification to Simple Push Notification API
 (https://play.google.com/store/apps/details?id=net.xdroid.pn)
+```
+
+## How to build
+
+This project is built using [poetry](https://python-poetry.org/):
+
+```bash
+poetry build
 ```
 
 ## References

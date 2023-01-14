@@ -26,6 +26,14 @@ or using python:
 ```bash
 python -m psend
 ```
+
+To use in your code:
+
+```python
+import psend
+
+psend.psend(["My-Key"], "Title", "This is a payload", None)
+```
 ## Options
 The options for this utility can shown using `-h` flag:
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "psend"
-version = "0.1.7"
+version = "0.1.8"
 description = "Utility to send push notification."
 authors = ["Sandro Spadaro <sandro.spadaro@gmail.com>"]
 readme = "README.md"
@@ -19,4 +19,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-psend = "psend.functions:send_push_notification"
+psend = "psend.functions:main"

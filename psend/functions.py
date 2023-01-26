@@ -5,6 +5,17 @@ import sys
 
 
 def psend(keys, title, payload, url):
+    """_summary_
+
+    Args:
+        keys (_type_): _description_
+        title (_type_): _description_
+        payload (_type_): _description_
+        url (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     service_url = "http://xdroid.net/api/message"
 
     for key in keys:
@@ -30,6 +41,8 @@ def psend(keys, title, payload, url):
 
 
 def main():
+    """_summary_
+    """
     parser = argparse.ArgumentParser(
         prog='psend',
         description='Utility to send push notifications',
